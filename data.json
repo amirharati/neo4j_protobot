@@ -495,7 +495,7 @@
       },
       {
         "text": "I like Persian food",
-        "intent": "fact",
+        "intent": "i_fact",
         "entities": [
           {
             "start": 7,
@@ -507,7 +507,7 @@
       },
       {
         "text": "I like Chinese food",
-        "intent": "fact",
+        "intent": "i_fact",
         "entities": [
           {
             "start": 7,
@@ -519,7 +519,7 @@
       },
       {
         "text": "I like Chines cuisine ",
-        "intent": "fact",
+        "intent": "i_fact",
         "entities": [
           {
             "start": 6,
@@ -531,7 +531,7 @@
       },
       {
         "text": "I love Persian Kebab",
-        "intent": "fact",
+        "intent": "i_fact",
         "entities": [
           {
             "start": 7,
@@ -543,7 +543,7 @@
       },
       {
         "text": "I love Persian food",
-        "intent": "fact",
+        "intent": "i_fact",
         "entities": [
           {
             "start": 7,
@@ -555,7 +555,7 @@
       },
       {
         "text": "I like Italian Pizza",
-        "intent": "fact",
+        "intent": "i_fact",
         "entities": [
           {
             "start": 7,
@@ -567,7 +567,7 @@
       },
       {
         "text": "I like Italian food",
-        "intent": "fact",
+        "intent": "i_fact",
         "entities": [
           {
             "start": 7,
@@ -579,7 +579,7 @@
       },
       {
         "text": "I like Mexican food",
-        "intent": "fact",
+        "intent": "i_fact",
         "entities": [
           {
             "start": 7,
@@ -591,7 +591,7 @@
       },
       {
         "text": "I like Korean food",
-        "intent": "fact",
+        "intent": "i_fact",
         "entities": [
           {
             "start": 6,
@@ -603,13 +603,403 @@
       },
       {
         "text": "I like Japanese food",
-        "intent": "fact",
+        "intent": "i_fact",
         "entities": [
           {
             "start": 7,
             "end": 15,
             "value": "Japanese",
             "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "A Persian restaurant named Anar is located in San Francisco ",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 2,
+            "end": 9,
+            "value": "Persian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "value": "Anar",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 46,
+            "end": 59,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Anar is Persian restaurant in San Francisco ",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Anar",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 8,
+            "end": 15,
+            "value": "Persian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 30,
+            "end": 43,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Meykadeh is a Persian restaurant in San Francisco ",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Meykadeh",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "value": "Persian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 36,
+            "end": 49,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Alborz is a Persian restaurant located in San Francisco ",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Alborz",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "value": "Persian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 42,
+            "end": 55,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Shamshiri  is a Persian restaurant in Los Angles ",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Shamshiri",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "value": "Persian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 38,
+            "end": 48,
+            "value": "Los Angles",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Panda Express is located in San Francisco",
+        "intent": "fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "Panda Express",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 28,
+            "end": 41,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Panda Express  is a Chinese restaurant  ",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "Panda Express",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 20,
+            "end": 27,
+            "value": "Chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Panda Express is a Chinese restaurant  in San Francisco",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "Panda Express",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "value": "Chinese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 42,
+            "end": 55,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Anar is a Persian restaurant",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Anar",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "Persian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Little Italy is an Italian restaurant in  Philadelphia",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "Little Italy",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "value": "Italian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 42,
+            "end": 54,
+            "value": "Philadelphia",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Halo is a Japanese fast food in San Francisco",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Halo",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "Japanese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 32,
+            "end": 45,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Alborz is a fancy Persian restaurant in Tehran",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Alborz",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 18,
+            "end": 25,
+            "value": "Persian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 40,
+            "end": 46,
+            "value": "Tehran",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Shalizar is a Persian restaurant close to San Francisco ",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Shalizar",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "value": "Persian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 42,
+            "end": 55,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "San Tung is a Chinese restaurant in San Francisco",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "San Tung",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "value": "Chinese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 36,
+            "end": 49,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Aria is a middle eastern cuisine in Redwood city",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Aria",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 10,
+            "end": 24,
+            "value": "middle eastern",
+            "entity": "cuisine"
+          },
+          {
+            "start": 36,
+            "end": 48,
+            "value": "Redwood city",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Anar is a Persian cuisine located in Harrison street, San Francisco ",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Anar",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "Persian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 54,
+            "end": 67,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Danji is a Korean restaurant in New York",
+        "intent": "r_fact",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Danji",
+            "entity": "restaurant_name"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "Korean",
+            "entity": "cuisine"
+          },
+          {
+            "start": 32,
+            "end": 40,
+            "value": "New York",
+            "entity": "location"
           }
         ]
       }

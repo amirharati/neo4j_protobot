@@ -1002,6 +1002,318 @@
             "entity": "location"
           }
         ]
+      },
+      {
+        "text": "I like Turkish food",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "Turkish ",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I love Persian food",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "Persian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I love Korean food",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "Korean",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I really like Greek food",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "Greek",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I like Greek  sea food",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "Greek",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "I live in Tehran",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "Tehran",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I live in Philadelphia",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "Philadelphia",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I live in San Francisco",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 10,
+            "end": 23,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Now I am living in Redwood city",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 18,
+            "end": 31,
+            "value": " Redwood city",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I live in NY",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 10,
+            "end": 12,
+            "value": "NY",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I live in New York",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "New York",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I live in Boston",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "Boston",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Now I am living in Philly",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "Philly",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I am Amir",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "Amir",
+            "entity": "user_name"
+          }
+        ]
+      },
+      {
+        "text": "I am Bob",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "Bob",
+            "entity": "user_name"
+          }
+        ]
+      },
+      {
+        "text": "I am Alice",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "Alice",
+            "entity": "user_name"
+          }
+        ]
+      },
+      {
+        "text": "I am John",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "John",
+            "entity": "user_name"
+          }
+        ]
+      },
+      {
+        "text": "I am Joe",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "Joe",
+            "entity": "user_name"
+          }
+        ]
+      },
+      {
+        "text": "My name is Amir",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Amir",
+            "entity": "user_name"
+          }
+        ]
+      },
+      {
+        "text": "My name is John",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "John",
+            "entity": "user_name"
+          }
+        ]
+      },
+      {
+        "text": "I am Amir and I live in San Francisco",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "Amir",
+            "entity": "user_name"
+          },
+          {
+            "start": 24,
+            "end": 37,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I am Joe and I live in Philadelphia",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 5,
+            "end": 8,
+            "value": "Joe",
+            "entity": "user_name"
+          },
+          {
+            "start": 23,
+            "end": 35,
+            "value": "Philadelphia",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "My name is  Max and I  live in San Francisco",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "Max",
+            "entity": "user_name"
+          },
+          {
+            "start": 31,
+            "end": 44,
+            "value": "San Francisco",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "My name is Jack and I live in Boston",
+        "intent": "i_fact",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Jack",
+            "entity": "user_name"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "Boston",
+            "entity": "location"
+          }
+        ]
       }
     ]
   }

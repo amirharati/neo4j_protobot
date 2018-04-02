@@ -24,33 +24,33 @@ class BotMemory:
            A method to memorize facts related to restaurants
         """
         n = self._add_node(name, "restaurant_name")
-        if cuisine not None:
+        if cuisine is not None:
             c = self._add_node(cuisine, "cuisine")
-            n.relationship.create("is_a", c)
-        if location not None:
+            n.relationships.create("is_a", c)
+        if location is not None:
             l = self._add_node(location, "location")
-            n.relationship.create("located", l)
+            n.relationships.create("located", l)
 
     def memorize_user_facts(self, name, cuisine=None, location=None):
         """
            A method to memorize facts about user.
         """
         n = self._add_node(name, "user_name")
-        if cuisine not None:
+        if cuisine is not None:
             c = self._add_node(cuisine, "cuisine")
-            n.relationship.create("likes", c)
-        if location not None:
+            n.relationships.create("likes", c)
+        if location is not None:
             l = self._add_node(location, "location")
-            n.relationship.create("located", l)
+            n.relationships.create("located", l)
 
     def clear_memory(self):
-        q = "MATCH (n:user_name) DELETE n"
+        q = "MATCH (n:user_name) DETACH DELETE n"
         results = self.db.query(q, returns=(client.Node, str, client.Node))
-        q = "MATCH (n:restaurant_name) DELETE n"
+        q = "MATCH (n:restaurant_name) DETACH DELETE n"
         results = self.db.query(q, returns=(client.Node, str, client.Node))
-        q = "MATCH (n:cuisine) DELETE n"
+        q = "MATCH (n:cuisine) DETACH DELETE n"
         results = self.db.query(q, returns=(client.Node, str, client.Node))
-        q = "MATCH (n:location) DELETE n"
+        q = "MATCH (n:location) DETACH DELETE n"
         results = self.db.query(q, returns=(client.Node, str, client.Node))
 
     def _memorize(self, entity1, entity2, rel):

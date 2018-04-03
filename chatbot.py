@@ -82,11 +82,23 @@ while(1 == 1):
         bot_mem.memorize_restaurant_facts(n, c, l)
     # if input is a query for a resturant
     elif rname == "restaurant_search" and rconf >= 0.5:
+        n = None
+        c = None
+        l = None
+        for e in results["entities"]:
+            if e["entity"] == "restaurant_name":
+                n = e["value"]
+            if e["entity"] == "cuisine":
+                c = e["value"]
+            if e["entity"] == "location":
+                l = e["value"]
+        # user should specify their own location.
         if bot_mem.get_user_location(last_user) is None:
             output_str = "OH! I don't know which city you live. Can you tell me?"
         else:
-            un, rn, loc, cus = bot_mem.find_restaurant(last_user)
-            output_str = br.find_restaurant_res(rn, loc, cus, last_location)
+            un, rn, loc, cus = bot_mem.find_restaurant(last_user, c)
+            output_str = br.find_restaurant_res(rn, loc, cus,
+                                                last_location)
 
     elif (input_str.strip() == "clear"):
         output_str = "OK! I forget everything you said to me!"

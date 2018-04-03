@@ -55,3 +55,8 @@ thanks
 Bye
 Bye
 
+
+TODO:
+- It's inference is very limited.
+- It can benefit from general knowledge graph.
+

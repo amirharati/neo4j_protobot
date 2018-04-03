@@ -82,16 +82,27 @@ class BotMemory:
             loc = results.rows[0][0]["name"]
         return loc
 
-    def find_restaurant(self, u):
+    def find_restaurant(self, u, c):
         """
            find a good choice!
            Should handle when there is no result or
            when user location is not specified.
+           If cuisine c specified apply it.
         """
         r_name = None
         r_location = None
         r_cuisine = None
         u_name = u
+
+        if c is not None:
+            q0 = 'MATCH p=(rl:location)<-[:located]-(res:restaurant_name)-[r:is_a]->(c:cuisine {name:"' + c + '"})<-[:likes]-(u:user_name {name:"' + u + '"})-[:located]->(ul:location) where ul=rl RETURN res, c, u, rl  LIMIT 25'
+            results = self.db.query(q0, data_contents=True)
+            if (len(results) > 0):
+                random_index = randrange(0, len(results))
+                r_name = results.rows[random_index][0]["name"]
+                r_location = results.rows[random_index][3]["name"]
+                r_cuisine = results.rows[random_index][1]["name"]
+                return (u_name, r_name, r_location, r_cuisine)
 
         q1 = 'MATCH p=(rl:location)<-[:located]-(res:restaurant_name)-[r:is_a]->(c:cuisine)<-[:likes]-(u:user_name {name:"' + u + '"})-[:located]->(ul:location) where ul=rl RETURN res, c, u, rl  LIMIT 25'
 

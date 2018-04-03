@@ -24,7 +24,7 @@ output_str = "Ready!"
 last_user = "amir" # this  is also the default user
 last_location = "san francisco"
 while(1 == 1):
-    print(output_str)
+    print("> ", output_str)
     input_str = input()
     # turnoff the warning related to numpy
     with warnings.catch_warnings():
@@ -88,12 +88,12 @@ while(1 == 1):
             un, rn, loc, cus = bot_mem.find_restaurant(last_user)
             output_str = br.find_restaurant_res(rn, loc, cus, last_location)
 
-    elif rname == "affirm" and rconf >= 0.3:
-        output_str = "Sure!"
-
     elif (input_str.strip() == "clear"):
         output_str = "OK! I forget everything you said to me!"
         bot_mem.clear_memory()
+
+    elif rname == "affirm" and rconf >= 0.3:
+        output_str = "Sure!"
 
     elif rname == "greet" and rconf > 0.5:
         output_str = "Hi"
